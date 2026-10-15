@@ -7,10 +7,7 @@ pipeline {
         // hoặc bỏ qua phần này nếu dùng Node.js có sẵn trong container/agent.
         nodejs "NodeJS-18" // Tên tool bạn đặt trong Global Tool Configuration của Jenkins
     }
-    environment{
-        SONAR_PROJECT_KEY = 'Test1'
-        SONAR_SCANNER_HOME = tool 'SonarQubeScanner'
-    }
+   
 
     stages {
         stage('Checkout Code') {
